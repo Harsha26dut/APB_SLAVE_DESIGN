@@ -19,7 +19,8 @@ This repository documents the complete implementation flow of an **APB (Advanced
 
 ### 1. Design & Functional Verification
 * **Logic:** Compliant with AMBA APB protocol (IDLE, SETUP, and ACCESS states).
-* **Verification:** SystemVerilog testbench with randomized baud rates and data patterns to ensure protocol robustness.
+* **Simulation Environment:** EDA Playground.
+* **Live Demo:** [Check the Simulation on EDA Playground](https://www.edaplayground.com/x/s7kR) 
 
 ### 2. Logic Synthesis (RTL to Netlist)
 * **Tool:** **Yosys Open-Source Synthesis Suite**.
@@ -29,7 +30,7 @@ This repository documents the complete implementation flow of an **APB (Advanced
 ### 3. Static Timing Analysis (STA)
 * **Tool:** **OpenSTA**.
 * **Goal:** Verified the performance of the synthesized netlist.
-* **Metrics:** Calculated Setup and Hold slacks and identified the maximum operating frequency (Fmax) under the specified constraints.
+* **Metrics:** Calculated Setup and Hold slacks and identified the maximum operating frequency ($F_{max}$) under the specified constraints.
 
 
 
