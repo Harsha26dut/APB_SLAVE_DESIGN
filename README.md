@@ -20,7 +20,7 @@ This repository documents the complete implementation flow of an **APB (Advanced
 ### 1. Design & Functional Verification
 * **Logic:** Compliant with AMBA APB protocol (IDLE, SETUP, and ACCESS states).
 * **Simulation Environment:** EDA Playground.
-* **Live Demo:** [Check the Simulation on EDA Playground](https://www.edaplayground.com/x/s7kR) 
+* **Live Demo:** [Check the Simulation on EDA Playground]((https://www.edaplayground.com/x/Utkx)) 
 
 ### 2. Logic Synthesis (RTL to Netlist)
 * **Tool:** **Yosys Open-Source Synthesis Suite**.
@@ -30,7 +30,7 @@ This repository documents the complete implementation flow of an **APB (Advanced
 ### 3. Static Timing Analysis (STA)
 * **Tool:** **OpenSTA**.
 * **Goal:** Verified the performance of the synthesized netlist.
-* **Metrics:** Calculated Setup and Hold slacks and identified the maximum operating frequency ($F_{max}$) under the specified constraints.
+* **Metrics:** Calculated Setup and Hold slacks and identified the maximum operating frequency F-MAX under the specified constraints.
 
 
 
@@ -39,7 +39,6 @@ This repository documents the complete implementation flow of an **APB (Advanced
 Detailed guidance for replicating each stage of this project is provided within the respective directories:
 
 ### 🚀 Synthesis & Area Reporting
-Navigate to the `synthesis/` folder. Use the provided command scripts to run Yosys:
-```bash
-# Example command to run synthesis:
-yosys -s synthesis/synthesis_script.ys
+Navigate to the `synthesis/` folder. Check the guide folder to run the yosys in wsl .
+Navigate to the `sta/` folder. Check the guide folder to run the OpenSTA in wsl .
+
